@@ -11,27 +11,16 @@ struct ContentView: View {
     var body: some View {
         TabView {
             RepoList()
-                .tabItem {
-                    Label(
-                        "Repositorios",
-                        systemImage: "arrow.trianglehead.branch"
-                    )
+                .tabItem{
+                    Label("Repositorios", systemImage: "arrow.trianglehead.branch")
                 }
-
             RepoForm()
-                .tabItem {
-                    Label(
-                        "Crear Repositorio",
-                        systemImage: "plus"
-                    )
+                .tabItem{
+                    Label("Crear Repositorio", systemImage: "plus")
                 }
-
             Profile()
-                .tabItem {
-                    Label(
-                        "Perfil de usuarios",
-                        systemImage: "person.crop.circle"
-                    )
+                .tabItem{
+                    Label("Perfil de usuario", systemImage: "person.crop.circle")
                 }
         }
     }
@@ -40,3 +29,4 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+

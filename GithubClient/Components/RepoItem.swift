@@ -6,18 +6,20 @@
 //
 
 import SwiftUI
-struct RepoItem : View {
-    var body : some View {
-        HStack{
+
+struct RepoItem: View {
+    var body: some View {
+        HStack {
             Image (uiImage: .githubLogo)
                 .resizable()
-                .frame(width:80 , height:80)
-            VStack (alignment : .leading){
+                .frame(width: 80, height: 80)
+            Spacer()
+            VStack (alignment: .leading){
                 Text("Nombre del repositorio")
                     .font(.title2)
-                Text("Lorem Impus dolor")
-                HStack{
-                    Text("Lenguaje")
+                Text("Lore omspun dolor descripcion del repositorio")
+                HStack {
+                    Text("Lenguaje:")
                         .font(.caption)
                     Spacer()
                     Text("Swift")
@@ -27,8 +29,9 @@ struct RepoItem : View {
         }
         .padding()
     }
-        
 }
+
 #Preview {
     RepoItem()
 }
+
