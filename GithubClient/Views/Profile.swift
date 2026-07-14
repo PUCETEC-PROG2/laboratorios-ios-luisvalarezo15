@@ -12,7 +12,7 @@ struct Profile: View {
     var body: some View {
         NavigationStack {
             VStack (alignment: .leading) {
-                Text("Sebastián Cabrera")
+                Text("Luis Valarezo")
                     .font(.title)
                 
                 Image(uiImage: .githubLogo)
@@ -20,7 +20,7 @@ struct Profile: View {
                     .scaledToFit()
                     
                 
-                Text("SCabreraML")
+                Text("LUISVALAREZO")
                     .font(.headline)
                     .padding(.vertical)
                 
