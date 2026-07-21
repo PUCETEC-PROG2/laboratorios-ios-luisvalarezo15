@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AC3AD1663006CC0400801D90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3AD1593006CC0400801D90 /* Preview Assets.xcassets */; };
-		AC3AD1673006CC0400801D90 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC3AD15B3006CC0400801D90 /* config.plist */; };
 		AC3AD1683006CC0400801D90 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AC3AD1613006CC0400801D90 /* .gitignore */; };
 		AC3AD1693006CC0400801D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3AD1623006CC0400801D90 /* Assets.xcassets */; };
 		AC3AD16A3006CC0400801D90 /* RepoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3AD1543006CC0400801D90 /* RepoItem.swift */; };
@@ -23,6 +22,8 @@
 		AC3AD1773006D17200801D90 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AC3AD1763006D17200801D90 /* Alamofire */; };
 		AC3AD1793006D1D400801D90 /* GithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3AD1783006D1C400801D90 /* GithubService.swift */; };
 		AC3AD17C3006D56300801D90 /* RepoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3AD17B3006D54800801D90 /* RepoListViewController.swift */; };
+		AC8EB8013010067D003F873F /* RepoFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8EB80030100656003F873F /* RepoFormViewController.swift */; };
+		AC8EB80430101574003F873F /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC8EB8033010155C003F873F /* config.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +32,6 @@
 		AC3AD1563006CC0400801D90 /* Repsoitory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repsoitory.swift; sourceTree = "<group>"; };
 		AC3AD1573006CC0400801D90 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		AC3AD1593006CC0400801D90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AC3AD15B3006CC0400801D90 /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		AC3AD15D3006CC0400801D90 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		AC3AD15E3006CC0400801D90 /* RepoForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoForm.swift; sourceTree = "<group>"; };
 		AC3AD15F3006CC0400801D90 /* RepoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoList.swift; sourceTree = "<group>"; };
@@ -42,6 +42,8 @@
 		AC3AD1733006CC1D00801D90 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		AC3AD1783006D1C400801D90 /* GithubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubService.swift; sourceTree = "<group>"; };
 		AC3AD17B3006D54800801D90 /* RepoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewController.swift; sourceTree = "<group>"; };
+		AC8EB80030100656003F873F /* RepoFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoFormViewController.swift; sourceTree = "<group>"; };
+		AC8EB8033010155C003F873F /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = config.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,14 +100,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		AC3AD15C3006CC0400801D90 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				AC3AD15B3006CC0400801D90 /* config.plist */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		AC3AD1603006CC0400801D90 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,12 +113,12 @@
 		AC3AD1653006CC0400801D90 /* GithubClient */ = {
 			isa = PBXGroup;
 			children = (
+				AC8EB80230101556003F873F /* Resources */,
 				AC3AD17A3006D53300801D90 /* Controllers */,
 				AC3AD1723006CC0B00801D90 /* Services */,
 				AC3AD1553006CC0400801D90 /* Components */,
 				AC3AD1583006CC0400801D90 /* Models */,
 				AC3AD15A3006CC0400801D90 /* Preview Content */,
-				AC3AD15C3006CC0400801D90 /* Resources */,
 				AC3AD1603006CC0400801D90 /* Views */,
 				AC3AD1623006CC0400801D90 /* Assets.xcassets */,
 				AC3AD1633006CC0400801D90 /* ContentView.swift */,
@@ -145,9 +139,18 @@
 		AC3AD17A3006D53300801D90 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AC8EB80030100656003F873F /* RepoFormViewController.swift */,
 				AC3AD17B3006D54800801D90 /* RepoListViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AC8EB80230101556003F873F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC8EB8033010155C003F873F /* config.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,8 +218,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8EB80430101574003F873F /* config.plist in Resources */,
 				AC3AD1663006CC0400801D90 /* Preview Assets.xcassets in Resources */,
-				AC3AD1673006CC0400801D90 /* config.plist in Resources */,
 				AC3AD1683006CC0400801D90 /* .gitignore in Resources */,
 				AC3AD1693006CC0400801D90 /* Assets.xcassets in Resources */,
 			);
@@ -237,6 +240,7 @@
 				AC3AD16D3006CC0400801D90 /* Profile.swift in Sources */,
 				AC3AD16E3006CC0400801D90 /* RepoForm.swift in Sources */,
 				AC3AD16F3006CC0400801D90 /* RepoList.swift in Sources */,
+				AC8EB8013010067D003F873F /* RepoFormViewController.swift in Sources */,
 				AC3AD1703006CC0400801D90 /* ContentView.swift in Sources */,
 				AC3AD1793006D1D400801D90 /* GithubService.swift in Sources */,
 				AC3AD1713006CC0400801D90 /* GithubClientApp.swift in Sources */,
